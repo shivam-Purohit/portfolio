@@ -78,7 +78,7 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Observe elements for animation
-document.querySelectorAll('.project-card, .achievement-card, .timeline-item').forEach(el => {
+document.querySelectorAll('.project-card, .achievement-card, .timeline-item, .education-card').forEach(el => {
     observer.observe(el);
 });
 

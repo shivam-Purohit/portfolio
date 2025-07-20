@@ -305,6 +305,70 @@ section {
     font-weight: 500;
 }
 
+/* Education Section */
+.education {
+    background: #f9fafb;
+}
+
+.education-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.education-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    transition: all 0.3s ease;
+}
+
+.education-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.education-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.education-details h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.education-details .degree {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #2563eb;
+    margin-bottom: 0.25rem;
+}
+
+.education-details .gpa {
+    font-weight: 600;
+    color: #059669;
+    margin-bottom: 0.25rem;
+}
+
+.education-details .dates {
+    color: #6b7280;
+    font-size: 0.9rem;
+}
+
 /* Experience Section */
 .timeline {
     max-width: 800px;
@@ -377,6 +441,22 @@ section {
     left: 0;
     color: #2563eb;
     font-weight: bold;
+}
+
+.tech-used {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tech-used .tech-tag {
+    background: #e5e7eb;
+    color: #374151;
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
 }
 
 /* Projects Section */
@@ -731,6 +811,16 @@ section {
 
     .skills-grid {
         grid-template-columns: 1fr;
+    }
+
+    .education-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .education-icon {
+        margin: 0 auto;
     }
 }
 
